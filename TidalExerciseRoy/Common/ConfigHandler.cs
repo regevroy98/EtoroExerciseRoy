@@ -6,7 +6,6 @@ namespace TidalExerciseRoy.Common
     {
         public static string Username => ConfigurationManager.AppSettings["userName"];
 
-
         public static string Password => ConfigurationManager.AppSettings["passWord"];
 
         public static int DefaultArtist => int.Parse(ConfigurationManager.AppSettings["defaultArtist"]);
