@@ -12,5 +12,6 @@ namespace TidalExerciseRoy.Common
 
         public static int MaxTrackToAddAtOnce => int.Parse(ConfigurationManager.AppSettings["maxTracksToAddAtOnce"]);
 
+        public static string UserToken => ConfigurationManager.AppSettings["userToken"];
     }
 }

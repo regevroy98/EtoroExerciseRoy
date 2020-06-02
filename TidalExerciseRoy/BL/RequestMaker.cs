@@ -27,7 +27,7 @@ namespace TidalExerciseRoy.BL
                 Logger.Info("Attempting to create new Tidl client");
                 Logger.Warn("Make sure the client configuration is correct!");
                 OpenTidlClient = new OpenTidlClient(config: new ClientConfiguration(_defaultClientConfiguration.ApiEndpoint,
-                    _defaultClientConfiguration.UserAgent, "pl4Vc0hemlAXD0mN", _defaultClientConfiguration.ClientUniqueKey,
+                    _defaultClientConfiguration.UserAgent, ConfigHandler.UserToken, _defaultClientConfiguration.ClientUniqueKey,
                     _defaultClientConfiguration.ClientVersion, _defaultClientConfiguration.DefaultCountryCode));
 
             }
